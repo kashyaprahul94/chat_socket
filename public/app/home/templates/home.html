@@ -1,0 +1,74 @@
+
+
+	<section id="home">
+
+		<div class="container full">
+
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<div class="form-group">
+						<div class="btn-group">
+							<button class="btn btn-primary" ng-click="selectMe()">
+								<span>Me</span>
+							</button>
+							<button class="btn btn-primary" ng-click="selectYou()">
+								<span>You</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-6 col-sm-offset-3">
+
+							<div class="panel" style="margin: 100px auto;">
+
+								<div class="panel-body">
+
+									<div class="form-group">
+										<div class="well" style="min-height: 150px; max-height: 400px; overflow:auto;">
+											<p autoscroll ng-repeat="chat in chat.messages track by $index">
+												<span ng-bind="chat.message"></span>
+											</p>
+											<p ng-if="!chat.messages.length">
+												<span class="text-muted">Why don't you say hello ?</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="clearfix">
+
+										<form class="form" ng-submit="sendMessage(chat)">
+
+											<div class="form-group">
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="Message" ng-model="chat.message" autofocus />
+													<div class="input-group-btn">
+														<button class="btn btn-primary" type="submit">
+															<span class="fa fa-send"></span>
+														</button>
+													</div>
+												</div>
+											</div>
+
+										</form>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>

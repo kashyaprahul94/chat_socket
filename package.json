@@ -1,0 +1,33 @@
+{
+    "name": "ChatSocket",
+    "version": "0.0.1",
+    "description": "APIs ",
+    "readme": "Readme.md",
+    "main": "app.js",
+    "repository": "https://github.com/kashyaprahul94/chat_socket.git",
+    "dependencies": {
+        "express": "^4.12.3",
+        "grunt": "^0.4.5",
+        "grunt-angular-templates": "*",
+        "grunt-cli": "latest",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-connect": "*",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-text-replace": "*",
+        "mongoose": "^4.0.2",
+        "multer": "*",
+        "mysql": "*",
+        "q": "*",
+        "request": "*",
+        "socket.io": "*",
+        "uuid": "*"
+    },
+    "devDependencies": {},
+    "author": {
+        "name": "Rahul Kashyap",
+        "email": "kashyaprahul94@gmail.com"
+    },
+    "scripts": {}
+}
